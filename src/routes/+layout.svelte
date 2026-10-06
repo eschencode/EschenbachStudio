@@ -4,6 +4,7 @@
 
 	$: lang = $page.params.lang || 'en';
 
+	/** @param {string} newLang */
 	function changeLang(newLang) {
 		if (typeof window !== 'undefined') {
 			window.location.href = `/${newLang}`;

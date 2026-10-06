@@ -8,6 +8,7 @@
 	let message = '';
 	let submitted = false;
 
+	/** @param {SubmitEvent} e */
 	async function handleSubmit(e) {
 		e.preventDefault();
 

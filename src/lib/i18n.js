@@ -1,3 +1,4 @@
+/** @type {Record<string, Record<string, string>>} */
 const translations = {
 	en: {
 		'home.title': 'Eschenbach Studio - Web Development & IT Consulting',
@@ -111,6 +112,7 @@ const translations = {
 	},
 };
 
+/** @param {string} lang @param {string} key @returns {string} */
 export function t(lang, key) {
 	return translations[lang]?.[key] || translations.en[key] || key;
 }
